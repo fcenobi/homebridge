@@ -38,6 +38,13 @@
 			"http_brightness_method": "GET",
 			"brightness_url": "http://localhost:8080/controller/rest/control/1680/%b",
 			"brightnesslvl_url": "http://localhost:8080/controller/rest/status/100047"
-		}
+		},
+		{
+                        "platform": "Server",
+                        "port"    : 8080,
+                        "name"    : "Homebridge Server",
+                        "log"     : "systemd",
+                        "restart" : "sudo systemctl restart homebridge"
+                }
 	]
 }
