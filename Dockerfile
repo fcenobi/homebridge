@@ -17,6 +17,7 @@ RUN apt-get update; \
 # See https://github.com/marcoraddatz/homebridge-docker#homebridge_version
 RUN npm install -g homebridge --unsafe-perm
 RUN npm install -g homebridge-openremote --unsafe-perm
+RUN npm install homebridge-server@latest -g
 
 # Final settings
 COPY avahi-daemon.conf /etc/avahi/avahi-daemon.conf
@@ -27,5 +28,5 @@ RUN mkdir -p /var/run/dbus
 ADD image/run.sh /root/run.sh
 
 # Run container
-EXPOSE 5353 51826 8080
+EXPOSE 5353 51826 8080 8765
 CMD ["/root/run.sh"]
