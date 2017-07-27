@@ -26,5 +26,5 @@ RUN mkdir -p /var/run/dbus
 ADD image/run.sh /root/run.sh
 
 # Run container
-EXPOSE 5353 51826
+EXPOSE 5353 51826 8080
 CMD ["/root/run.sh"]
