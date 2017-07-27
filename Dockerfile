@@ -1,7 +1,5 @@
 FROM node:8.2
 
-MAINTAINER Marco Raddatz
-
 # Set environment variables
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
