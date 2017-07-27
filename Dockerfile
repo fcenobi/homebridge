@@ -1,4 +1,4 @@
-FROM node:8.2
+FROM node:7.10
 
 # Set environment variables
 ENV DEBIAN_FRONTEND noninteractive
