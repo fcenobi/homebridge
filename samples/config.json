@@ -7,8 +7,11 @@
 	},
 	"description": "This is an example configuration file with all supported devices. You can use this as a template for creating your own configuration file containing devices you actually own.",
 	"platforms": [{
-			"platform": "Telldus",
-			"name": "Telldus"
+			"platform": "Server",
+                        "port"    : 8080,
+                        "name"    : "Homebridge Server",
+                        "log"     : "systemd",
+                        "restart" : "sudo systemctl restart homebridge"
 		}
 	],
 	"accessories": [ {
@@ -38,13 +41,6 @@
 			"http_brightness_method": "GET",
 			"brightness_url": "http://localhost:8080/controller/rest/control/1680/%b",
 			"brightnesslvl_url": "http://localhost:8080/controller/rest/status/100047"
-		},
-		{
-                        "platform": "Server",
-                        "port"    : 8080,
-                        "name"    : "Homebridge Server",
-                        "log"     : "systemd",
-                        "restart" : "sudo systemctl restart homebridge"
-                }
+		}
 	]
 }
