@@ -104,5 +104,5 @@ If you're using a non-Synology device, you might need to adjust the paths to you
 
 This project is licensed under Apache License V2 (see [LICENSE](LICENSE)).
 
-
+![doc8](https://user-images.githubusercontent.com/24189833/28738197-58d00258-73f2-11e7-8849-5def9e19bfaa.png)
 
