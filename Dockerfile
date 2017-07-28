@@ -15,20 +15,20 @@ RUN apt-get update; \
 # -------------------------------------------------------------------------
 # You can force a specific version by setting HOMEBRIDGE_VERSION
 # See https://github.com/marcoraddatz/homebridge-docker#homebridge_version
-RUN npm config set registry http://registry.npmjs.org \
-    npm install -g node-gyp \
-    npm install -g homebridge --unsafe-perm \
-    npm install -g homebridge-openremote --unsafe-perm \
-    npm install homebridge-server@latest -g --unsafe-perm \
-    npm install -g homebridge-vera --unsafe-perm \
-    npm install polling-to-event --unsafe-perm \
-    npm install debug --unsafe-perm \
-    npm install create-hash --unsafe-perm \
-    npm install request --unsafe-perm \
-    npm install request-promise --unsafe-perm \
-    npm install node-persist --unsafe-perm \
-    npm install hap-nodejs --unsafe-perm \
-    npm install prompt --unsafe-perm \
+RUN npm config set registry http://registry.npmjs.org; \
+    npm install -g node-gyp; \
+    npm install -g homebridge --unsafe-perm; \
+    npm install -g homebridge-openremote --unsafe-perm; \
+    npm install homebridge-server@latest -g --unsafe-perm; \
+    npm install -g homebridge-vera --unsafe-perm; \
+    npm install polling-to-event --unsafe-perm; \
+    npm install debug --unsafe-perm; \
+    npm install create-hash --unsafe-perm; \
+    npm install request --unsafe-perm; \
+    npm install request-promise --unsafe-perm; \
+    npm install node-persist --unsafe-perm; \
+    npm install hap-nodejs --unsafe-perm; \
+    npm install prompt --unsafe-perm; \
     npm install async --unsafe-perm 
     
 # Final settings
