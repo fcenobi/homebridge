@@ -9,7 +9,7 @@ RUN apt-get update; \
     apt-get install -y apt-utils apt-transport-https; \
     apt-get install -y curl wget; \
     apt-get install -y libnss-mdns avahi-discover libavahi-compat-libdnssd-dev libkrb5-dev nodejs npm git-core; \
-    apt-get install -y nano vim mc
+    apt-get install -y nano vim mc htop
 
 # Install latest Homebridge
 # -------------------------------------------------------------------------
