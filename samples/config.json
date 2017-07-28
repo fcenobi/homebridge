@@ -10,7 +10,7 @@
 			"platform": "Server",
                         "port"    : 8765,
                         "name"    : "Homebridge Server",
-                        "log"     : "/var/log/homebridge.log",
+                        "log"     : "systemd",
                         "restart" : "systemctl restart homebridge"
 		}
 	],
