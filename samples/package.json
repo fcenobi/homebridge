@@ -1,37 +1,33 @@
 {
-  "name": "homebridge-vera",
-  "description": "HomeKit bridge for Vera",
-  "version": "0.7.6",
+  "name": "homebridge",
+  "description": "HomeKit support for the impatient",
+  "version": "0.4.22",
   "scripts": {
-    "start": "node VeraLink.js"
+    "dev": "DEBUG=* ./bin/homebridge -D -P example-plugins/ || true"
   },
-  "engines": {
-    "homebridge": ">=0.2.13"
+  "author": {
+    "name": "Nick Farina"
   },
-  "dependencies": {
-    "debug": "^2.2.0",
-    "create-hash": "^1.1.2",
-    "request": "^2.75.0",
-    "request-promise": "^4.1.1",
-    "node-persist": "0.0.8",
-    "hap-nodejs": "^0.0.7",
-    "prompt": "^1.0.0",
-    "async": "^1.5.2"
-  },
-  "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/damianxd/VeraLink.git"
+    "url": "git://github.com/nfarina/homebridge.git"
   },
-  "keywords": [
-    "homebridge",
-    "vera",
-    "veralink",
-    "homebridge-plugin"
-  ],
-  "author": {
-    "name": "Damian Alarcon"
+  "bugs": {
+    "url": "http://github.com/nfarina/homebridge/issues"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "homebridge": "bin/homebridge"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "commander": "2.8.1",
+    "hap-nodejs": "0.4.27",
+    "semver": "5.0.3",
+    "node-persist": "^0.0.8"
+  }
 }
