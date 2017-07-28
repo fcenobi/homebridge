@@ -22,15 +22,15 @@ RUN npm install -g homebridge-vera --unsafe-perm
 
 # Final settings
 COPY avahi-daemon.conf /etc/avahi/avahi-daemon.conf
+ADD samples/config.json /root/.homebridge/config.json
+ADD samples/.env /root/.homebridge/.env
+ADD samples/install.sh /root/.homebridge/install.sh
+ADD samples/package.json /root/.homebridge/package.json
 
 USER root
 RUN mkdir -p /var/run/dbus
 
 ADD image/run.sh /root/run.sh
-ADD samples/config.json /root/.homebridge/config.json
-ADD samples/.env /root/.homebridge/.env
-ADD samples/install.sh /root/.homebridge/install.sh
-ADD samples/package.json /root/.homebridge/package.json
 
 # Run container
 EXPOSE 5353 51826 8080 8765
