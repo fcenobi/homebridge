@@ -19,6 +19,7 @@ RUN npm install -g homebridge --unsafe-perm
 RUN npm install -g homebridge-openremote --unsafe-perm
 RUN npm install homebridge-server@latest -g --unsafe-perm
 RUN npm install -g homebridge-vera --unsafe-perm
+RUN npm install polling-to-event --unsafe-perm
 
 # Final settings
 COPY avahi-daemon.conf /etc/avahi/avahi-daemon.conf
