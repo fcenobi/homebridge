@@ -2,6 +2,7 @@
 ![doc9](https://user-images.githubusercontent.com/24189833/28737747-53f5fc58-73f0-11e7-90dd-fa553ed299f7.png)
 
 [This Docker image](https://hub.docker.com/r/marcoraddatz/homebridge/) helps you to easily setup [Homebridge](https://github.com/nfarina/homebridge) on your Synology, but also runs on QNAP devices or Raspberry Pies. If you're using a Synology, please make sure to run at least DSM 6, otherwise you [might have to go the harder way](https://marcoraddatz.com/en/2016/07/13/run-homebridge-on-a-synology/) via SSH/shell scripts.
+![doc8](https://user-images.githubusercontent.com/24189833/28738197-58d00258-73f2-11e7-8849-5def9e19bfaa.png)
 
 ## Installation (via Synology DSM)
 
@@ -104,5 +105,5 @@ If you're using a non-Synology device, you might need to adjust the paths to you
 
 This project is licensed under Apache License V2 (see [LICENSE](LICENSE)).
 
-![doc8](https://user-images.githubusercontent.com/24189833/28738197-58d00258-73f2-11e7-8849-5def9e19bfaa.png)
+
 
