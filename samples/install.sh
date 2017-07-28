@@ -5,3 +5,4 @@
 # See https://github.com/marcoraddatz/homebridge-docker#installsh
 
 npm install -g homebridge-openremote
+npm install -g homebridge-vera
