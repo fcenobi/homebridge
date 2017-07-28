@@ -4,9 +4,8 @@
   "version"     : "0.1.1",
   "license"     : "ISC",
   "dependencies": {
-    "homebridge-harmonyhub": "0.2.0-alpha",
-    "homebridge-netatmo"   : "^0.0.4",
-    "homebridge-nukiio"    : "^0.0.3",
-    "homebridge-synology"  : "^0.1.0"
+    "homebridge-openremote@1.0.1",
+    "homebridge-server@1.0.24",
+    "homebridge-vera@0.7.6"
   }
 }
