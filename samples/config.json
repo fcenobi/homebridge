@@ -8,10 +8,10 @@
 	"description": "This is an example configuration file with all supported devices. You can use this as a template for creating your own configuration file containing devices you actually own.",
 	"platforms": [{
 			"platform": "Server",
-                        "port"    : 8080,
+                        "port"    : 8765,
                         "name"    : "Homebridge Server",
-                        "log"     : "systemd",
-                        "restart" : "sudo systemctl restart homebridge"
+                        "log"     : "/var/log/homebridge.log",
+                        "restart" : "systemctl restart homebridge"
 		}
 	],
 	"accessories": [ {
@@ -27,20 +27,6 @@
 			"http_volume_method": "GET",
 			"volume_url": "http://localhost:8080/controller/rest/control/1707/%b",
 			"volumelvl_url": "http://localhost:8080/controller/rest/status/100054"
-		},
-		{
-			"accessory": "openremote",
-			"name": "Kitchen Lamp",
-			"switchHandling": "realtime",
-			"http_method": "POST",
-			"on_url": "http://localhost:8080/controller/rest/control/1673/ON",
-			"off_url": "http://localhost:8080/controller/rest/control/1673/OFF",
-			"status_url": "http://localhost:8080/controller/rest/status/100052",
-			"service": "Light",
-			"brightnessHandling": "realtime",
-			"http_brightness_method": "GET",
-			"brightness_url": "http://localhost:8080/controller/rest/control/1680/%b",
-			"brightnesslvl_url": "http://localhost:8080/controller/rest/status/100047"
 		}
 	]
 }
