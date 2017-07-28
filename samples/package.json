@@ -4,8 +4,8 @@
   "version"     : "0.1.1",
   "license"     : "ISC",
   "dependencies": {
-    "homebridge-openremote@1.0.1",
-    "homebridge-server@1.0.24",
-    "homebridge-vera@0.7.6"
+    "homebridge-openremote" : "1.0.1",
+    "homebridge-server" : "1.0.24",
+    "homebridge-vera" : "0.7.6"
   }
 }
